@@ -6,19 +6,10 @@ namespace LinqExercise
 {
     class Program
     {
-        //Static array of integers
         private static int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
 
         static void Main(string[] args)
         {
-            /*
-             * 
-             * Complete every task using Method OR Query syntax. 
-             * You may find that Method syntax is easier to use since it is most like C#
-             * Every one of these can be completed using Linq and then printing with a foreach loop.
-             * Push to your github when completed!
-             * 
-             */
             Console.WriteLine($"The sum is {numbers.Sum()}");
 
             Console.WriteLine($"The average is {numbers.Average()}");
@@ -69,6 +60,10 @@ namespace LinqExercise
             var seth = new Employee("Seth", "Bowman", 29, 3);
             employees.Append(seth).ToList().ForEach(x => Console.WriteLine(x.FullName));
             Console.WriteLine("======================");
+
+            Console.ReadLine();
+
+            Console.WriteLine();
         }
 
         #region CreateEmployeesMethod
